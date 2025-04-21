@@ -13,3 +13,7 @@
 
 # Binaries
 **/bin/
+
+# GitHub
+.github/
+
