@@ -1,71 +1,169 @@
+# ☄ Polkadot Substrate Interface
+
 <div align="center">
 
-# Substrate Dev Template
+[![Vercel Status](https://img.shields.io/badge/Vercel-Deployed-success?logo=vercel)](https://vercel.com)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+![Next](https://img.shields.io/badge/next-14.x-42b883)
+![React](https://img.shields.io/badge/next-14.x-42b883)
+![Polkadot.js](https://img.shields.io/badge/Polkadot.js-API-e6007a)
 
-<img height="70px" alt="Polkadot SDK Logo" src="https://github.com/paritytech/polkadot-sdk/raw/master/docs/images/Polkadot_Logo_Horizontal_Pink_White.png#gh-dark-mode-only"/>
-<img height="70px" alt="Polkadot SDK Logo" src="https://github.com/paritytech/polkadot-sdk/raw/master/docs/images/Polkadot_Logo_Horizontal_Pink_Black.png#gh-light-mode-only"/>
-<br /><br />
-<a href="r0gue.io"><img src="https://github.com/user-attachments/assets/96830651-c3db-412a-9cb4-6fcd8ea6231b" alt="R0GUE Logo" /></a>
+![Polkadot Parachain Interface Logo](images/heading_image.png)
 
-[![Twitter URL](https://img.shields.io/twitter/follow/Pop?style=social)](https://x.com/onpopio/)
-[![Twitter URL](https://img.shields.io/twitter/follow/R0GUE?style=social)](https://twitter.com/gor0gue)
-[![Telegram](https://img.shields.io/badge/Telegram-gray?logo=telegram)](https://t.me/onpopio)
-
-> This template is used to generate parachains using [Pop CLI](https://github.com/r0gue-io/pop-cli) - an all-in-one tool for Polkadot development.
-
-> It is based on the [Polkadot SDK](https://github.com/paritytech/polkadot-sdk) and is updated by [R0GUE](r0gue.io) after releases in the main [Polkadot SDK monorepo](https://github.com/paritytech/polkadot-sdk).
+**A sleek, futuristic, and user-friendly interface for interacting <br/> 
+with Substrate-based blockchains on any platform.**
 
 </div>
 
-* ⏫ This template provides a starting point to build a [parachain](https://wiki.polkadot.network/docs/learn-parachains).
+---
 
-* ☁️ It is based on the
-[Cumulus](https://paritytech.github.io/polkadot-sdk/master/polkadot_sdk_docs/polkadot_sdk/cumulus/index.html) framework.
+## ✨ Features
 
-* 🔧 Its runtime is configured with a single custom pallet as a starting point, and a handful of ready-made pallets
-such as a [Balances pallet](https://paritytech.github.io/polkadot-sdk/master/pallet_balances/index.html).
+- **🌍 Flexible Network Connection** – Easily connect to Polkadot, Kusama, Westend, or your custom local Zombienet nodes.
+- **🔍 Chain State Explorer** – View and query on-chain storage with an intuitive UI.
+- **📝 Submit Extrinsics** – Craft and send transactions with dynamic parameter input.
+- **💸 Token Transfers** – Send tokens effortlessly via a clean and straightforward interface.
+- **🔐 Multi-Wallet Support** – Compatible with both Polkadot.js and SubWallet browser extensions.
+- **📱 Responsive Design** – Seamlessly optimized for both desktop and mobile devices.
 
-## Template Structure
+---
 
-A Polkadot SDK based project such as this one consists of:
+## 🚀 Getting Started
 
-* 💿 [Node](./node/README.md) - the binary application.
-* 🧮 [Runtime](./runtime/README.md) - the core logic of the parachain.
+### Prerequisites
 
-## Getting Started
+Make sure the following tools are installed:
 
-#### Install [Pop CLI](https://github.com/r0gue-io/pop-cli) - the all-in-one Polkadot development tool:
-> Detailed installation instructions can be found [here](https://learn.onpop.io/v/cli/installing-pop-cli).
-```
-cargo install --force --locked pop-cli
-```
+- Node.js v16+
+- npm or yarn
+- [Polkadot.js browser extension](https://polkadot.js.org/extension/)
+- Zombienet & Pop CLI (for local Substrate testing)
 
-#### Start a new parachain project with this template:
-```
-pop new parachain
-```
+---
 
-#### Learn how to run your parachain using the `pop up` command:
-```sh
-pop up parachain -f ./network.toml
-```
-> 👉 https://learn.onpop.io/v/appchains/guides/running-your-parachain
+## 🔧 Installation
 
-### Learning Resources
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/ajiguruhprasetyo/substrate-dev-template.git
+   cd polkadot-parachain-interface
+   code .
+   ```
 
-* 🧑‍🏫 To learn about Polkadot in general, [Polkadot.network](https://polkadot.network/) website is a good starting point.
+2. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-  * ⭕ Learn more about parachains [here](https://wiki.polkadot.network/docs/learn-parachains).
+3. Start the development server:
+   ```bash
+   npm run dev
+   # or
+   yarn run dev
+   ```
 
-* 🧑‍🔧 For technical introduction, [here](https://github.com/paritytech/polkadot-sdk#-documentation) are
-the Polkadot SDK documentation resources.
+4. Visit [http://localhost:3000](http://localhost:3000) in your browser.
 
-* 📖 To learn how to develop parachains with Pop CLI, read the [guides](https://learn.onpop.io/v/appchains).
+---
 
-### Support
+## 🛠️ Installing Pop CLI
 
-* 💡 Be part of our passionate community of Web3 pioneers. [Join our Telegram](https://t.me/onpopio)!
+Pop CLI helps you spawn local Substrate chains using Zombienet.
 
-* 👥 Additionally, there are [GitHub issues](https://github.com/r0gue-io/base-parachain/issues) and
-[Polkadot Stack Exchange](https://polkadot.stackexchange.com/).
+### Steps:
 
+1. Ensure you have [Go](https://go.dev/doc/install) and [Rust](https://www.rust-lang.org/tools/install) installed.
+2. Clone the Polkadot SDK repo:
+   ```bash
+   git clone https://github.com/paritytech/polkadot-sdk.git
+   cd polkadot-sdk
+   ```
+
+3. Install Pop CLI via Cargo:
+   ```bash
+   cargo install --force --path pop/cli
+   ```
+
+4. Verify the installation:
+   ```bash
+   pop --version
+   ```
+
+---
+
+## 💻 Development
+
+### Connect to Different Networks
+
+From the homepage, use the **Network Selector** to:
+
+1. Choose a preset network (Polkadot, Kusama, Westend)
+2. Enter a custom WebSocket endpoint (e.g., your local Zombienet node)
+
+> ⚠️ Note: Zombienet generates a new WebSocket port every time it runs. Make sure you update the endpoint accordingly.
+
+### Using with Local Zombienet
+
+1. Launch Zombienet using the `pop` command.
+2. Copy the WebSocket URL from the terminal (e.g., `ws://127.0.0.1:55308`)
+3. Start the Next dev server (`npm run dev`)
+4. Input the WebSocket URL in the Network Selector to connect
+
+---
+
+## 🌐 Deployment
+
+The app is pre-configured for smooth deployment using Vercel or Netlify.
+
+### Deploying to Vercel
+
+1. Fork this repository
+2. Sign up at [vercel.com](https://vercel.com) and connect your GitHub
+3. Create a new project from the forked repo
+4. Set the build options:
+   - **Build Command**: `npm run build` or `yarn build`
+   - **Publish Directory**: `build`
+5. Deploy 🚀
+
+> ⚠️ Note: Browsers block local WebSocket connections in deployed apps. Use public endpoints like Westend for testing the deployed version.
+
+---
+
+## 🎨 Customizing the Interface
+
+You can personalize the interface by replacing images in the following directories:
+
+- **Logo**: Replace `public/logo.png` and `public/logo192.png`
+- **UI Screenshot**: Update `docs/images/interface-screenshot.png`
+- **Favicon**: Replace `public/favicon.ico`
+
+---
+
+## 📖 Resources
+
+Want to dive deeper into Substrate and Polkadot development? Check out:
+
+- [Polkadot.js Documentation](https://polkadot.js.org/docs/)
+- [Polkadot Wiki](https://wiki.polkadot.network/)
+
+---
+
+## 📝 License
+
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for more info.
+
+---
+
+## 🙌 Acknowledgments
+
+Special thanks to:
+
+- [Polkadot.js](https://polkadot.js.org/) – for the powerful API & tools
+- [Zombienet](https://docs.polkadot.com/tutorials/polkadot-sdk/testing/spawn-basic-chain/) – for enabling smooth local blockchain testing
+
+---
+
+## 🎥 Youtube Video
+- [Explanation}(https://www.youtube.com/watch?v=rLSLem2uOzU&t=19s) - for more example and explanation in this final project
